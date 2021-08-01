@@ -1,0 +1,30 @@
+POST localhost:8080/api/people
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "sex": "MALE",
+  "weight" : 80
+}
+###
+GET localhost:8080/api/people
+Accept: application/json
+
+###
+GET localhost:8080/api/people/1
+Accept: application/json
+
+###
+PUT localhost:8080/api/people/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "John Doe up",
+  "sex": "FEMALE",
+  "weight" : 85
+}
+
+###
+DELETE localhost:8080/api/people/1
