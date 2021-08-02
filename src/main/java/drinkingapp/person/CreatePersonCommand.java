@@ -1,6 +1,5 @@
-package drinkingapp.commands;
+package drinkingapp.person;
 
-import drinkingapp.model.Sex;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,12 +13,13 @@ import javax.validation.constraints.Positive;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdatePersonCommand {
+public class CreatePersonCommand {
 
     @NotBlank(message = "Person's name cannot be null or blank")
     @Length(max = 255, message = "Person's name maximum length is 255")
     @Schema(description = "Person's name", example = "John Doe")
     private String name;
+
 
     @Schema(description = "Person's sex", example = "MALE")
     @NotNull

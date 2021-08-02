@@ -1,11 +1,5 @@
-package drinkingapp.services;
+package drinkingapp.person;
 
-import drinkingapp.commands.CreatePersonCommand;
-import drinkingapp.commands.UpdatePersonCommand;
-import drinkingapp.dtos.PersonDto;
-import drinkingapp.exceptions.PersonNotFoundException;
-import drinkingapp.model.Person;
-import drinkingapp.repositories.PersonRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;

@@ -1,4 +1,4 @@
-package drinkingapp.commands;
+package drinkingapp.drink;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateDrinkCommand {
+public class UpdateDrinkCommand {
 
     @NotBlank(message = "Drink's name cannot be null or blank")
     @Length(max = 255, message = "Drink's name maximum length is 255")

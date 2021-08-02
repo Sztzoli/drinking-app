@@ -1,4 +1,4 @@
-package drinkingapp.model;
+package drinkingapp.person;
 
 public enum Sex {
 

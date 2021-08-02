@@ -1,5 +1,6 @@
-package drinkingapp.model;
+package drinkingapp.drink;
 
+import drinkingapp.person.Person;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

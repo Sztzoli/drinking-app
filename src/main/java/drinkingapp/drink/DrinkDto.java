@@ -1,4 +1,4 @@
-package drinkingapp.dtos;
+package drinkingapp.drink;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

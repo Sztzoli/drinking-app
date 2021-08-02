@@ -1,6 +1,5 @@
-package drinkingapp.repositories;
+package drinkingapp.drink;
 
-import drinkingapp.model.Drink;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

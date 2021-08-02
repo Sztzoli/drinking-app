@@ -1,6 +1,5 @@
-package drinkingapp.dtos;
+package drinkingapp.person;
 
-import drinkingapp.model.Sex;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

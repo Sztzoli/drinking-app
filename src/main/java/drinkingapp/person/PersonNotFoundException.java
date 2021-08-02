@@ -1,4 +1,4 @@
-package drinkingapp.exceptions;
+package drinkingapp.person;
 
 import org.zalando.problem.AbstractThrowableProblem;
 import org.zalando.problem.Status;

@@ -1,11 +1,7 @@
-package drinkingapp.services;
+package drinkingapp.drink;
 
-import drinkingapp.commands.CreateDrinkCommand;
-import drinkingapp.commands.UpdateDrinkCommand;
-import drinkingapp.dtos.DrinkDto;
-import drinkingapp.model.Drink;
-import drinkingapp.model.Person;
-import drinkingapp.repositories.DrinkRepository;
+import drinkingapp.person.Person;
+import drinkingapp.person.PersonService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;

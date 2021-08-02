@@ -1,9 +1,5 @@
-package drinkingapp.controllers;
+package drinkingapp.person;
 
-import drinkingapp.commands.CreatePersonCommand;
-import drinkingapp.commands.UpdatePersonCommand;
-import drinkingapp.dtos.PersonDto;
-import drinkingapp.services.PersonService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

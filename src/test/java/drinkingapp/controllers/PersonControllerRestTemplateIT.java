@@ -1,9 +1,9 @@
 package drinkingapp.controllers;
 
-import drinkingapp.commands.CreatePersonCommand;
-import drinkingapp.commands.UpdatePersonCommand;
-import drinkingapp.dtos.PersonDto;
-import drinkingapp.model.Sex;
+import drinkingapp.person.CreatePersonCommand;
+import drinkingapp.person.PersonDto;
+import drinkingapp.person.Sex;
+import drinkingapp.person.UpdatePersonCommand;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
