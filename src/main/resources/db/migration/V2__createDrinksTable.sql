@@ -10,5 +10,5 @@ create table drinks
     primary key (id)
 );
 alter table drinks
-    add constraint FK8PersonDrinks foreign key (person_id) references people (id);
+    add constraint FK_PersonDrinks foreign key (person_id) references people (id);
 

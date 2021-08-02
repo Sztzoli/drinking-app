@@ -24,7 +24,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@Sql(statements = {"delete from people"})
+@Sql(statements = {
+        "alter table drinks drop foreign key if exists FK_PersonDrinks ",
+        "delete from people"})
 class PersonControllerRestTemplateIT {
 
     @Autowired

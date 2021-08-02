@@ -5,8 +5,8 @@ Accept: application/json
 {
   "name": "dreher",
   "volume": 500,
-  "alcoholPercent": 50,
-  "elapsedTime" : "30"
+  "alcoholPercent": 5,
+  "elapsedTime" : "0"
 }
 
 ###
