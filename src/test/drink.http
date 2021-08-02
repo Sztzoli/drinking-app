@@ -1,0 +1,32 @@
+POST localhost:8080/api/people/1/drinks
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "dreher",
+  "volume": 500,
+  "alcoholPercent": 50,
+  "elapsedTime" : "30"
+}
+
+###
+GET localhost:8080/api/people/1/drinks
+Accept: application/json
+
+###
+GET localhost:8080/api/people/1/drinks/1
+Accept: application/json
+
+###
+PUT localhost:8080/api/people/1/drinks/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "dreher",
+  "volume": 500,
+  "alcoholPercent": 10,
+  "elapsedTime" : "60"
+}
+###
+DELETE localhost:8080/api/people/2/drinks/3

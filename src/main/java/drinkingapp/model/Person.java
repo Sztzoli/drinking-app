@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -21,6 +22,9 @@ public class Person {
     private Sex sex;
 
     private int weight;
+
+    @OneToMany(mappedBy = "person", orphanRemoval = true)
+    private List<Drink> drinks;
 
 
     public Person(String name, Sex sex, int weight) {
