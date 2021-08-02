@@ -13,11 +13,11 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 public class PersonStatistics {
 
-    BigDecimal allAlcohol;
-    BigDecimal elapsedTime;
-    BigDecimal actualAlcoholContent;
-    BigDecimal actualAlcoholVolume;
-    BigDecimal soberTime;
+    private BigDecimal allAlcohol;
+    private BigDecimal elapsedTime;
+    private BigDecimal actualAlcoholContent;
+    private BigDecimal actualAlcoholVolume;
+    private BigDecimal soberTime;
 
 
     public PersonStatistics(Person person) {
