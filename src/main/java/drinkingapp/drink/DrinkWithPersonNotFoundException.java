@@ -5,14 +5,14 @@ import org.zalando.problem.Status;
 
 import java.net.URI;
 
-public class DrinkNotFoundException extends AbstractThrowableProblem {
+public class DrinkWithPersonNotFoundException extends AbstractThrowableProblem {
 
-    public DrinkNotFoundException(Long id) {
+    public DrinkWithPersonNotFoundException(Long id, Long personId) {
         super(
                 URI.create("drink/not-found"),
                 "Not found",
                 Status.NOT_FOUND,
-                String.format("Drink not found by id: %d", id)
+                String.format("Drink not found by id: %d for person id: %d", id, personId)
         );
     }
 }

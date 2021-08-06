@@ -26,7 +26,7 @@ public class DrinkService {
     }
 
     public DrinkDto findById(Long id, Long drinkId) {
-        Drink drink = drinkRepository.findByIdAndPerson_id(drinkId, id);
+        Drink drink = findByIdAndPersonId(id,drinkId);
         return mapper.map(drink, DrinkDto.class);
     }
 
@@ -40,7 +40,7 @@ public class DrinkService {
 
     @Transactional
     public DrinkDto updateDrink(Long id, Long drinkId, UpdateDrinkCommand command) {
-        Drink drink = drinkRepository.findByIdAndPerson_id(drinkId, id);
+        Drink drink = findByIdAndPersonId(id,drinkId);
         drink.setName(command.getName());
         drink.setVolume(command.getVolume());
         drink.setAlcoholPercent(command.getAlcoholPercent());
@@ -50,7 +50,11 @@ public class DrinkService {
     }
 
     public void deleteById(Long id, Long drinkId) {
-        Drink drink = drinkRepository.findByIdAndPerson_id(drinkId, id);
+        Drink drink = findByIdAndPersonId(id,drinkId);
         drinkRepository.delete(drink);
+    }
+
+    private Drink findByIdAndPersonId(Long id, Long drinkId) {
+        return drinkRepository.findByIdAndPerson_id(drinkId, id).orElseThrow(() -> new DrinkWithPersonNotFoundException(drinkId, id));
     }
 }
